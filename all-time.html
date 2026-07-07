@@ -1,15 +1,67 @@
-<nav class="site-nav">
-  <a href="index.html">Home</a>
-  <a href="current-season.html">Current Season</a>
-  <a href="history.html">Season History</a>
-  <a href="all-time.html">All-Time</a>
-  <a href="teams.html">Teams</a>
-  <a href="directory.html">League Directory</a>
-</nav>
-<header class="site-header">
-  <img src="assets/logo.jpg" alt="DCL league logo" class="site-logo">
-  <div>
-    <h1>The Dispersed Charlotte League</h1>
-    <p>League history, standings, stats, and records</p>
-  </div>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DCL - All-Time</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="current-season.html">Current Season</a>
+    <a href="history.html">Season History</a>
+    <a href="all-time.html">All-Time</a>
+    <a href="teams.html">Teams</a>
+    <a href="directory.html">League Directory</a>
+  </nav>
+
+  <header class="site-header">
+    <img src="assets/logo.jpg" alt="DCL league logo" class="site-logo">
+    <div class="site-title">
+      <h1>All-Time Data</h1>
+      <p>Overall records, titles, and head-to-head history.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2 class="section-title">Franchise Records</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Manager</th>
+              <th>Wins</th>
+              <th>Losses</th>
+              <th>Titles</th>
+              <th>Playoff Apps</th>
+            </tr>
+          </thead>
+          <tbody id="all-time-records"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Head-to-Head</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Manager A</th>
+              <th>Manager B</th>
+              <th>A Wins</th>
+              <th>B Wins</th>
+            </tr>
+          </thead>
+          <tbody id="head-to-head-records"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

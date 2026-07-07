@@ -1,15 +1,88 @@
-<nav class="site-nav">
-  <a href="index.html">Home</a>
-  <a href="current-season.html">Current Season</a>
-  <a href="history.html">Season History</a>
-  <a href="all-time.html">All-Time</a>
-  <a href="teams.html">Teams</a>
-  <a href="directory.html">League Directory</a>
-</nav>
-<header class="site-header">
-  <img src="assets/logo.jpg" alt="DCL league logo" class="site-logo">
-  <div>
-    <h1>The Dispersed Charlotte League</h1>
-    <p>League history, standings, stats, and records</p>
-  </div>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DCL - Current Season</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="current-season.html">Current Season</a>
+    <a href="history.html">Season History</a>
+    <a href="all-time.html">All-Time</a>
+    <a href="teams.html">Teams</a>
+    <a href="directory.html">League Directory</a>
+  </nav>
+
+  <header class="site-header">
+    <img src="assets/logo.jpg" alt="DCL league logo" class="site-logo">
+    <div class="site-title">
+      <h1 id="current-season-title">Current Season</h1>
+      <p>Standings, scores, and team stats.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2 class="section-title">Standings</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Place</th>
+              <th>Team</th>
+              <th>Manager</th>
+              <th>Wins</th>
+              <th>Losses</th>
+              <th>PF</th>
+              <th>PA</th>
+            </tr>
+          </thead>
+          <tbody id="current-standings"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Weekly Scores</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Week</th>
+              <th>Away Team</th>
+              <th>Away Score</th>
+              <th>Home Team</th>
+              <th>Home Score</th>
+            </tr>
+          </thead>
+          <tbody id="current-scores"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Team Stats</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Team</th>
+              <th>Manager</th>
+              <th>PF</th>
+              <th>PA</th>
+              <th>Streak</th>
+            </tr>
+          </thead>
+          <tbody id="current-team-stats"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

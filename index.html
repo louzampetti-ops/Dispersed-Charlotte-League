@@ -1,15 +1,62 @@
-<nav class="site-nav">
-  <a href="index.html">Home</a>
-  <a href="current-season.html">Current Season</a>
-  <a href="history.html">Season History</a>
-  <a href="all-time.html">All-Time</a>
-  <a href="teams.html">Teams</a>
-  <a href="directory.html">League Directory</a>
-</nav>
-<header class="site-header">
-  <img src="assets/logo.jpg" alt="DCL league logo" class="site-logo">
-  <div>
-    <h1>The Dispersed Charlotte League</h1>
-    <p>League history, standings, stats, and records</p>
-  </div>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DCL - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="current-season.html">Current Season</a>
+    <a href="history.html">Season History</a>
+    <a href="all-time.html">All-Time</a>
+    <a href="teams.html">Teams</a>
+    <a href="directory.html">League Directory</a>
+  </nav>
+
+  <header class="site-header">
+    <img src="assets/logo.jpg" alt="DCL league logo" class="site-logo">
+    <div class="site-title">
+      <h1>The Dispersed Charlotte League</h1>
+      <p>League history, standings, stats, and records</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-intro card">
+      <h2 class="section-title">Current League Snapshot</h2>
+      <p><span class="badge" id="season-year"></span></p>
+      <p id="season-summary"></p>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Standings Preview</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Place</th>
+              <th>Team</th>
+              <th>Record</th>
+              <th>Points For</th>
+            </tr>
+          </thead>
+          <tbody id="homepage-standings"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Season Archive</h2>
+      <ul id="homepage-seasons" class="list-clean"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">DCL Fantasy Football</footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

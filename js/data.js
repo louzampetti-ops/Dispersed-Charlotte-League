@@ -13,3 +13,44 @@
     <p>League history, standings, stats, and records</p>
   </div>
 </header>
+const leagueData = {
+  league: {
+    name: "The Dispersed Charlotte League",
+    commissioner: "Name Here",
+    roles: {
+      commissioner: "Name Here",
+      tomfoolery: "Name Here",
+      assistantTomfoolery: "Name Here",
+      creativeDesigner: "Name Here"
+    }
+  },
+  currentSeason: {
+    year: 2026,
+    standings: [],
+    weeklyScores: [],
+    teams: []
+  },
+  seasons: {
+    "2025": {
+      champion: "Max",
+      standings: [],
+      scores: [],
+      stats: []
+    }
+  },
+  franchises: {
+    "lou": {
+      manager: "Lou",
+      currentTeamNames: [],
+      titles: 1,
+      record: "0-0",
+      playoffAppearances: 0,
+      headToHead: []
+    }
+  },
+  allTime: {
+    placements: [],
+    records: [],
+    headToHead: []
+  }
+};

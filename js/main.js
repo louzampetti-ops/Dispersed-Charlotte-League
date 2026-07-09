@@ -249,6 +249,121 @@ function renderSeasonPage() {
       `;
     });
   }
+
+  renderSeasonCharts(season);
+}
+
+function renderSeasonCharts(season) {
+  if (typeof Chart === "undefined" || !season) return;
+
+  // Weekly Trend chart (points by week for one team, or average)
+  const weeklyTrendCanvas = document.getElementById("weekly-trend-chart");
+  if (weeklyTrendCanvas && season.weeklyPoints && Array.isArray(season.weeklyPoints.labels)) {
+    const labels = season.weeklyPoints.labels;
+    const firstTeam = season.weeklyPoints.teams && season.weeklyPoints.teams[0];
+    const data = firstTeam ? firstTeam.scores.map(s => (s === "TBD" ? null : Number(s))) : [];
+
+    new Chart(weeklyTrendCanvas, {
+      type: "line",
+      data: {
+        labels,
+        datasets: [
+          {
+            label: firstTeam ? firstTeam.team : "Weekly points",
+            data,
+            borderColor: "#2e1f93",
+            backgroundColor: "rgba(46, 31, 147, 0.1)",
+            tension: 0.3
+          }
+        ]
+      },
+      options: {
+        plugins: { legend: { display: true } },
+        scales: {
+          x: { title: { display: true, text: "Week" } },
+          y: { title: { display: true, text: "Points" } }
+        }
+      }
+    });
+  }
+
+  // Playoff Odds chart
+  const playoffCanvas = document.getElementById("playoff-odds-chart");
+  if (playoffCanvas && Array.isArray(season.playoffOdds)) {
+    const labels = season.playoffOdds.map(t => t.team);
+    const makeData = season.playoffOdds.map(t => t.makePlayoffs === "TBD" ? 0 : Number(t.makePlayoffs));
+    const winData = season.playoffOdds.map(t => t.winTitle === "TBD" ? 0 : Number(t.winTitle));
+
+    new Chart(playoffCanvas, {
+      type: "bar",
+      data: {
+        labels,
+        datasets: [
+          { label: "Make playoffs %", data: makeData, backgroundColor: "rgba(242, 171, 29, 0.7)" },
+          { label: "Win title %", data: winData, backgroundColor: "rgba(46, 31, 147, 0.7)" }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { beginAtZero: true, max: 100, title: { display: true, text: "Probability (%)" } }
+        }
+      }
+    });
+  }
+
+  // Average Scores chart
+  const avgCanvas = document.getElementById("average-scores-chart");
+  if (avgCanvas && Array.isArray(season.averageScoresChart)) {
+    const labels = season.averageScoresChart.map(t => t.team);
+    const avgData = season.averageScoresChart.map(t => t.average === "TBD" ? 0 : Number(t.average));
+    const actualData = season.averageScoresChart.map(t => t.actual === "TBD" ? 0 : Number(t.actual));
+    const last3Data = season.averageScoresChart.map(t => t.last3 === "TBD" ? 0 : Number(t.last3));
+
+    new Chart(avgCanvas, {
+      type: "bar",
+      data: {
+        labels,
+        datasets: [
+          { label: "Season average", data: avgData, backgroundColor: "rgba(242, 171, 29, 0.7)" },
+          { label: "Current average", data: actualData, backgroundColor: "rgba(46, 31, 147, 0.7)" },
+          { label: "Last 3 weeks", data: last3Data, backgroundColor: "rgba(91, 100, 114, 0.7)" }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { beginAtZero: true, title: { display: true, text: "Points" } }
+        }
+      }
+    });
+  }
+
+  // All-Play record chart
+  const allPlayCanvas = document.getElementById("all-play-chart");
+  if (allPlayCanvas && Array.isArray(season.allPlay)) {
+    const labels = season.allPlay.map(t => t.team);
+    const winsData = season.allPlay.map(t => t.wins === "TBD" ? 0 : Number(t.wins));
+    const lossesData = season.allPlay.map(t => t.losses === "TBD" ? 0 : Number(t.losses));
+
+    new Chart(allPlayCanvas, {
+      type: "bar",
+      data: {
+        labels,
+        datasets: [
+          { label: "All-play wins", data: winsData, backgroundColor: "rgba(46, 31, 147, 0.7)" },
+          { label: "All-play losses", data: lossesData, backgroundColor: "rgba(242, 171, 29, 0.7)" }
+        ]
+      },
+      options: {
+        indexAxis: "y",
+        responsive: true,
+        scales: {
+          x: { beginAtZero: true, title: { display: true, text: "Games" } }
+        }
+      }
+    });
+  }
 }
 
 function renderFranchisePage() {

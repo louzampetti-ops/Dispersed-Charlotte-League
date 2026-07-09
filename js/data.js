@@ -14,34 +14,51 @@ const leagueData = {
     year: 2026,
     summary: "Offseason.",
     standings: [
-      { place: 1, team: "Kung Fu Lou", manager: "Lou", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
-      { place: 2, team: "Q-Tip", manager: "Kvonte", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 }
+      { place: 1, team: "TDB", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
+      { place: 2, team: "TDB", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
+      { place: 3, team: "TDB", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
+      { place: 4, team: "TDB", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
+      { place: 5, team: "TDB", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
+      { place: 6, team: "TDB", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
+      { place: 7, team: "TDB", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
+      { place: 8, team: "TDB", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
+      { place: 9, team: "TDB", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
+      { place: 10, team: "TDB", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
     ],
     weeklyScores: [
       { week: 1, away: "Team A", awayScore: 0, home: "Team B", homeScore: 0 }
     ],
     teamStats: [
       { team: "Kung Fu Lou", manager: "Lou", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
+      { team: "Q-Tip", manager: "Kvonte", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
+      { team: "Florida Man", manager: "Pat", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
+      { team: "Howie Dewitt", manager: "Eli", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
+      { team: "Min Livergirll", manager: "Min", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
+      { team: "The Better Swan", manager: "Kacie", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
+      { team: "Ruble Incognitus", manager: "Max", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
+      { team: "All You Need is Love", manager: "Carolyn", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
+      { team: "The SwanFather", manager: "Nick", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
+      { team: "I'm a Reidtard", manager: "Reid", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
     ]
   },
 
   seasons: [
     {
       year: 2025,
-      champion: "TBD",
-      runnerUp: "TBD",
+      champion: "Ruble Incognitus",
+      runnerUp: "All You Need is Love",
       summary: "Fill in season summary.",
       teamStats: [
-        { manager: "Lou",      team: "Kung Fu Lou",           wins: "TBD", losses: "TBD", allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: "TBD", averageLast3: "TBD", averageOpponent: "TBD", differential: "TBD", weeklyEarnings: "TBD", powerRank: "TBD" },
-        { manager: "Kvonte",   team: "Q-Tip",                 wins: "TBD", losses: "TBD", allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: "TBD", averageLast3: "TBD", averageOpponent: "TBD", differential: "TBD", weeklyEarnings: "TBD", powerRank: "TBD" },
-        { manager: "Pat",      team: "Florida Man",           wins: "TBD", losses: "TBD", allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: "TBD", averageLast3: "TBD", averageOpponent: "TBD", differential: "TBD", weeklyEarnings: "TBD", powerRank: "TBD" },
-        { manager: "Eli",      team: "Howie Dewitt",          wins: "TBD", losses: "TBD", allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: "TBD", averageLast3: "TBD", averageOpponent: "TBD", differential: "TBD", weeklyEarnings: "TBD", powerRank: "TBD" },
-        { manager: "Min",      team: "Min Livergirll",        wins: "TBD", losses: "TBD", allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: "TBD", averageLast3: "TBD", averageOpponent: "TBD", differential: "TBD", weeklyEarnings: "TBD", powerRank: "TBD" },
-        { manager: "Kacie",    team: "The Better Swan",       wins: "TBD", losses: "TBD", allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: "TBD", averageLast3: "TBD", averageOpponent: "TBD", differential: "TBD", weeklyEarnings: "TBD", powerRank: "TBD" },
-        { manager: "Max",      team: "Ruble Incognitus",      wins: "TBD", losses: "TBD", allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: "TBD", averageLast3: "TBD", averageOpponent: "TBD", differential: "TBD", weeklyEarnings: "TBD", powerRank: "TBD" },
-        { manager: "Carolyn",  team: "All You Need is Love",  wins: "TBD", losses: "TBD", allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: "TBD", averageLast3: "TBD", averageOpponent: "TBD", differential: "TBD", weeklyEarnings: "TBD", powerRank: "TBD" },
-        { manager: "Nick",     team: "The SwanFather",        wins: "TBD", losses: "TBD", allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: "TBD", averageLast3: "TBD", averageOpponent: "TBD", differential: "TBD", weeklyEarnings: "TBD", powerRank: "TBD" },
-        { manager: "Reid",     team: "I'm a Reidtard",        wins: "TBD", losses: "TBD", allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: "TBD", averageLast3: "TBD", averageOpponent: "TBD", differential: "TBD", weeklyEarnings: "TBD", powerRank: "TBD" }
+        { manager: "Lou",      team: "Kung Fu Lou",           wins: 5, losses: 8, allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: 123.12, averageOpponent: 125.47, differential: -2.35, weeklyEarnings: "$60" },
+        { manager: "Kvonte",   team: "Q-Tip",                 wins: 6, losses: 7, allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: 120.32, averageOpponent: 124.76, differential: -4.44, weeklyEarnings: "$0" },
+        { manager: "Pat",      team: "Florida Man",           wins: 4, losses: 9, allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: 114.54, averageOpponent: 133.80, differential: -19.26, weeklyEarnings: "$30" },
+        { manager: "Eli",      team: "Howie Dewitt",          wins: 8, losses: 5, allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: 130.94, averageOpponent: 117.02, differential: 13.91, weeklyEarnings: "$90" },
+        { manager: "Min",      team: "Min Livergirll",        wins: 7, losses: 6, allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: 129.43, averageOpponent: 138.03, differential: -8.60, weeklyEarnings: "$90" },
+        { manager: "Kacie",    team: "The Better Swan",       wins: 7, losses: 6, allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: 125.48, averageOpponent: 126.30, differential: -0.82, weeklyEarnings: "$60" },
+        { manager: "Max",      team: "Ruble Incognitus",      wins: 9, losses: 4, allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: 137.63, averageOpponent: 121.28, differential: 16.36, weeklyEarnings: "$60" },
+        { manager: "Carolyn",  team: "All You Need is Love",  wins: 9, losses: 4, allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: 126.96, averageOpponent: 115.61, differential: 11.35, weeklyEarnings: "$0" },
+        { manager: "Nick",     team: "The SwanFather",        wins: 5, losses: 8, allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: 130.37, averageOpponent: 118.16, differential: 12.21, weeklyEarnings: "$90" },
+        { manager: "Reid",     team: "I'm a Reidtard",        wins: 5, losses: 8, allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: 120.83, averageOpponent: 133.23, differential: -12.40, weeklyEarnings: "$30"  }
       ],
       weeklyPoints: {
         labels: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9", "Week 10", "Week 11", "Week 12", "Week 13", "Week 14", "Week 15", "Week 16", "Week 17"],
@@ -59,28 +76,16 @@ const leagueData = {
         ]
       },
       averageScoresChart: [
-        { team: "Kung Fu Lou",           average: "TBD", actual: "TBD", last3: "TBD" },
-        { team: "Q-Tip",                 average: "TBD", actual: "TBD", last3: "TBD" },
-        { team: "Florida Man",           average: "TBD", actual: "TBD", last3: "TBD" },
-        { team: "Howie Dewitt",          average: "TBD", actual: "TBD", last3: "TBD" },
-        { team: "Min Livergirll",        average: "TBD", actual: "TBD", last3: "TBD" },
-        { team: "The Better Swan",       average: "TBD", actual: "TBD", last3: "TBD" },
-        { team: "Ruble Incognitus",      average: "TBD", actual: "TBD", last3: "TBD" },
-        { team: "All You Need is Love",  average: "TBD", actual: "TBD", last3: "TBD" },
-        { team: "The SwanFather",        average: "TBD", actual: "TBD", last3: "TBD" },
-        { team: "I'm a Reidtard",        average: "TBD", actual: "TBD", last3: "TBD" }
-      ],
-      playoffOdds: [
-        { team: "Kung Fu Lou",           makePlayoffs: "TBD", winTitle: "TBD", missPlayoffs: "TBD" },
-        { team: "Q-Tip",                 makePlayoffs: "TBD", winTitle: "TBD", missPlayoffs: "TBD" },
-        { team: "Florida Man",           makePlayoffs: "TBD", winTitle: "TBD", missPlayoffs: "TBD" },
-        { team: "Howie Dewitt",          makePlayoffs: "TBD", winTitle: "TBD", missPlayoffs: "TBD" },
-        { team: "Min Livergirll",        makePlayoffs: "TBD", winTitle: "TBD", missPlayoffs: "TBD" },
-        { team: "The Better Swan",       makePlayoffs: "TBD", winTitle: "TBD", missPlayoffs: "TBD" },
-        { team: "Ruble Incognitus",      makePlayoffs: "TBD", winTitle: "TBD", missPlayoffs: "TBD" },
-        { team: "All You Need is Love",  makePlayoffs: "TBD", winTitle: "TBD", missPlayoffs: "TBD" },
-        { team: "The SwanFather",        makePlayoffs: "TBD", winTitle: "TBD", missPlayoffs: "TBD" },
-        { team: "I'm a Reidtard",        makePlayoffs: "TBD", winTitle: "TBD", missPlayoffs: "TBD" }
+        { team: "Kung Fu Lou",           average: "TBD", actual: "TBD" },
+        { team: "Q-Tip",                 average: "TBD", actual: "TBD" },
+        { team: "Florida Man",           average: "TBD", actual: "TBD" },
+        { team: "Howie Dewitt",          average: "TBD", actual: "TBD" },
+        { team: "Min Livergirll",        average: "TBD", actual: "TBD" },
+        { team: "The Better Swan",       average: "TBD", actual: "TBD" },
+        { team: "Ruble Incognitus",      average: "TBD", actual: "TBD" },
+        { team: "All You Need is Love",  average: "TBD", actual: "TBD" },
+        { team: "The SwanFather",        average: "TBD", actual: "TBD" },
+        { team: "I'm a Reidtard",        average: "TBD", actual: "TBD" }
       ],
       allPlay: [
         { team: "Kung Fu Lou",           wins: "TBD", losses: "TBD" },
@@ -93,18 +98,6 @@ const leagueData = {
         { team: "All You Need is Love",  wins: "TBD", losses: "TBD" },
         { team: "The SwanFather",        wins: "TBD", losses: "TBD" },
         { team: "I'm a Reidtard",        wins: "TBD", losses: "TBD" }
-      ],
-      powerRankings: [
-        { rank: 1, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 },
-        { rank: 2, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 },
-        { rank: 3, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 },
-        { rank: 4, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 },
-        { rank: 5, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 },
-        { rank: 6, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 },
-        { rank: 7, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 },
-        { rank: 8, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 },
-        { rank: 9, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 },
-        { rank: 10, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 }
       ],
       recordBook: [
         { label: "Most Points (Week)",             holder: "TBD", value: "TBD", note: "TBD" },

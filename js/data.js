@@ -23,21 +23,21 @@ const leagueData = {
       { place: 7, team: "TDB", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
       { place: 8, team: "TDB", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
       { place: 9, team: "TDB", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
-      { place: 10, team: "TDB", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
+      { place: 10, team: "TDB", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 }
     ],
     weeklyScores: [
       { week: 1, away: "Team A", awayScore: 0, home: "Team B", homeScore: 0 }
     ],
     teamStats: [
-      { team: "Kung Fu Lou", manager: "Lou", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
-      { team: "Q-Tip", manager: "Kvonte", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
-      { team: "Florida Man", manager: "Pat", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
-      { team: "Howie Dewitt", manager: "Eli", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
-      { team: "Min Livergirll", manager: "Min", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
-      { team: "The Better Swan", manager: "Kacie", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
-      { team: "Ruble Incognitus", manager: "Max", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
-      { team: "All You Need is Love", manager: "Carolyn", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
-      { team: "The SwanFather", manager: "Nick", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
+      { team: "Kung Fu Lou", manager: "Lou", pointsFor: 0, pointsAgainst: 0, streak: "W0" },
+      { team: "Q-Tip", manager: "Kvonte", pointsFor: 0, pointsAgainst: 0, streak: "W0" },
+      { team: "Florida Man", manager: "Pat", pointsFor: 0, pointsAgainst: 0, streak: "W0" },
+      { team: "Howie Dewitt", manager: "Eli", pointsFor: 0, pointsAgainst: 0, streak: "W0" },
+      { team: "Min Livergirll", manager: "Min", pointsFor: 0, pointsAgainst: 0, streak: "W0" },
+      { team: "The Better Swan", manager: "Kacie", pointsFor: 0, pointsAgainst: 0, streak: "W0" },
+      { team: "Ruble Incognitus", manager: "Max", pointsFor: 0, pointsAgainst: 0, streak: "W0" },
+      { team: "All You Need is Love", manager: "Carolyn", pointsFor: 0, pointsAgainst: 0, streak: "W0" },
+      { team: "The SwanFather", manager: "Nick", pointsFor: 0, pointsAgainst: 0, streak: "W0" },
       { team: "I'm a Reidtard", manager: "Reid", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
     ]
   },

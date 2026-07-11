@@ -269,4 +269,3 @@ const leagueData = {
     { slug: "reid", manager: "Reid", currentTeamName: "I'm a Reidtard", bio: "Previously known as Zanzi DOG; Blue Eyes White Dragon. Previously co-manager of TemporaREID aka Kried." }
   ]
 };
-</query>

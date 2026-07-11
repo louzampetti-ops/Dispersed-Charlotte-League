@@ -27,7 +27,24 @@
   <main class="container">
     <section class="card">
       <h2 class="section-title">Season Overview</h2>
-      <p>This page holds full season standings, scores, stats, and awards for 2025.</p>
+      <p>This page holds final results, standings, season stats, and records for 2025.</p>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Final Standings</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Place</th>
+              <th>Team</th>
+              <th>Manager</th>
+              <th>Winnings</th>
+            </tr>
+          </thead>
+          <tbody id="season-final-standings"></tbody>
+        </table>
+      </div>
     </section>
 
     <section class="card">
@@ -40,7 +57,6 @@
               <th>Team</th>
               <th>Record</th>
               <th>Avg Score</th>
-              <th>Last 3</th>
               <th>Avg Opp</th>
               <th>Diff</th>
               <th>Weekly Earnings</th>
@@ -52,53 +68,11 @@
     </section>
 
     <section class="card">
-      <h2 class="section-title">Power Rankings</h2>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Rank</th>
-              <th>Team</th>
-              <th>Tier</th>
-              <th>Score</th>
-              <th>Record</th>
-              <th>Streak</th>
-              <th>Change</th>
-            </tr>
-          </thead>
-          <tbody id="season-power-rankings"></tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="card">
       <h2 class="section-title">Record Book</h2>
       <ul id="season-record-book" class="list-clean"></ul>
     </section>
-
-    <section class="card">
-      <h2 class="section-title">Weekly Trend</h2>
-      <canvas id="weekly-trend-chart"></canvas>
-    </section>
-
-    <section class="card">
-      <h2 class="section-title">Playoff Odds</h2>
-      <canvas id="playoff-odds-chart"></canvas>
-    </section>
-
-    <section class="card">
-      <h2 class="section-title">Average Scores</h2>
-      <canvas id="average-scores-chart"></canvas>
-    </section>
-
-    <section class="card">
-      <h2 class="section-title">All-Play Record</h2>
-      <canvas id="all-play-chart"></canvas>
-    </section>
   </main>
 
-  <!-- Chart.js from CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="../js/data.js"></script>
   <script src="../js/main.js"></script>
 </body>

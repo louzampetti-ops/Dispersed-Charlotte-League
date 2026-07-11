@@ -19,83 +19,59 @@
   <header class="site-header">
     <img src="../assets/logo.jpg" alt="DCL league logo" class="site-logo">
     <div class="site-title">
-      <h1 id="season-page-title">Season Page</h1>
-      <p id="season-page-summary">Update with standings, scores, and stats.</p>
+      <h1 id="season-page-title">2024 Season</h1>
+      <p id="season-page-summary">Fill in season summary.</p>
     </div>
   </header>
 
   <main class="container">
     <section class="card">
       <h2 class="section-title">Season Overview</h2>
-      <p>This page will hold full season standings, all scores, stats, and awards.</p>
+      <p>This page holds final results, standings, season stats, and records for 2024.</p>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Final Standings</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Place</th>
+              <th>Team</th>
+              <th>Manager</th>
+              <th>Winnings</th>
+            </tr>
+          </thead>
+          <tbody id="season-final-standings"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Team Stats</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Manager</th>
+              <th>Team</th>
+              <th>Record</th>
+              <th>Avg Score</th>
+              <th>Avg Opp</th>
+              <th>Diff</th>
+              <th>Weekly Earnings</th>
+            </tr>
+          </thead>
+          <tbody id="season-team-stats"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Record Book</h2>
+      <ul id="season-record-book" class="list-clean"></ul>
     </section>
   </main>
-
-  <section class="card">
-  <h2 class="section-title">Team Stats</h2>
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>Manager</th>
-          <th>Team</th>
-          <th>Record</th>
-          <th>Avg Score</th>
-          <th>Last 3</th>
-          <th>Avg Opp</th>
-          <th>Diff</th>
-          <th>Weekly Earnings</th>
-        </tr>
-      </thead>
-      <tbody id="season-team-stats"></tbody>
-    </table>
-  </div>
-</section>
-
-<section class="card">
-  <h2 class="section-title">Power Rankings</h2>
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>Rank</th>
-          <th>Team</th>
-          <th>Tier</th>
-          <th>Score</th>
-          <th>Record</th>
-          <th>Streak</th>
-          <th>Change</th>
-        </tr>
-      </thead>
-      <tbody id="season-power-rankings"></tbody>
-    </table>
-  </div>
-</section>
-
-<section class="card">
-  <h2 class="section-title">Record Book</h2>
-  <ul id="season-record-book" class="list-clean"></ul>
-</section>
-
-<section class="card">
-  <h2 class="section-title">Weekly Trend</h2>
-  <canvas id="weekly-trend-chart"></canvas>
-</section>
-
-<section class="card">
-  <h2 class="section-title">Playoff Odds</h2>
-  <canvas id="playoff-odds-chart"></canvas>
-</section>
-
-<section class="card">
-  <h2 class="section-title">Average Scores</h2>
-  <canvas id="average-scores-chart"></canvas>
-</section>
-
-<section class="card">
-  <h2 class="section-title">All-Play Record</h2>
-  <canvas id="all-play-chart"></canvas>
-</section>
 
   <script src="../js/data.js"></script>
   <script src="../js/main.js"></script>

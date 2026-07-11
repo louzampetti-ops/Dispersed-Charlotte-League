@@ -100,12 +100,12 @@ const leagueData = {
         { team: "I'm a Reidtard", wins: "TBD", losses: "TBD" }
       ],
       recordBook: [
-        { label: "Most Points (Week)", holder: "TBD", value: "TBD", note: "TBD" },
-        { label: "Biggest Win (Week)", holder: "TBD", value: "TBD", note: "TBD" },
-        { label: "Highest Scoring Player (Week)", holder: "TBD", value: "TBD", note: "TBD" },
-        { label: "Best Record (Regular Season)", holder: "TBD", value: "TBD", note: "TBD" },
-        { label: "Most Points (Regular Season)", holder: "TBD", value: "TBD", note: "TBD" },
-        { label: "Highest Scoring Player (Season)", holder: "TBD", value: "TBD", note: "TBD" }
+        { label: "Most Points (Week)", holder: "Ruble Incognitus", value: "199.70", note: "Week 10" },
+        { label: "Biggest Win (Week)", holder: "The Better Swan", value: "95.95", note: "Week 8 vs Florida Man" },
+        { label: "Highest Scoring Player (Week)", holder: "Ruble Incognitus", value: "54.65", note: "Jahmry Gibbs" },
+        { label: "Best Record (Regular Season)", holder: "Ruble Incognitus and All You Need is Love", value: "9-4", note: "TBD" },
+        { label: "Most Points (Regular Season)", holder: "Ruble Incognitus", value: "1781.42", note: "TBD" },
+        { label: "Highest Scoring Player (Season)", holder: "Florida Man", value: "396.62", note: "Josh Allen" }
       ]
     },
 

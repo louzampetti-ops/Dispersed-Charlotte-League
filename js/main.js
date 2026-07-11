@@ -99,6 +99,8 @@ function renderCurrentSeasonPage() {
       `;
     });
   }
+
+  renderCurrentSeasonCharts();
 }
 
 function renderHistoryPage() {
@@ -195,12 +197,26 @@ function renderSeasonPage() {
 
   const title = document.getElementById("season-page-title");
   const summary = document.getElementById("season-page-summary");
+  const finalStandingsBody = document.getElementById("season-final-standings");
   const teamStatsBody = document.getElementById("season-team-stats");
-  const powerRankingsBody = document.getElementById("season-power-rankings");
   const recordBookList = document.getElementById("season-record-book");
 
   if (title) title.textContent = `${season.year} Season`;
   if (summary) summary.textContent = safeText(season.summary);
+
+  if (finalStandingsBody) {
+    finalStandingsBody.innerHTML = "";
+    safeArray(season.finalStandings).forEach(item => {
+      finalStandingsBody.innerHTML += `
+        <tr>
+          <td>${safeText(item.place)}</td>
+          <td>${safeText(item.team)}</td>
+          <td>${safeText(item.manager)}</td>
+          <td>${safeText(item.winnings)}</td>
+        </tr>
+      `;
+    });
+  }
 
   if (teamStatsBody) {
     teamStatsBody.innerHTML = "";
@@ -211,27 +227,9 @@ function renderSeasonPage() {
           <td>${safeText(team.team)}</td>
           <td>${safeText(team.wins)}-${safeText(team.losses)}</td>
           <td>${safeText(team.averageScore)}</td>
-          <td>${safeText(team.averageLast3)}</td>
           <td>${safeText(team.averageOpponent)}</td>
           <td>${safeText(team.differential)}</td>
           <td>${safeText(team.weeklyEarnings)}</td>
-        </tr>
-      `;
-    });
-  }
-
-  if (powerRankingsBody) {
-    powerRankingsBody.innerHTML = "";
-    safeArray(season.powerRankings).forEach(item => {
-      powerRankingsBody.innerHTML += `
-        <tr>
-          <td>${safeText(item.rank)}</td>
-          <td>${safeText(item.team)}</td>
-          <td>${safeText(item.tier)}</td>
-          <td>${safeText(item.score)}</td>
-          <td>${safeText(item.record)}</td>
-          <td>${safeText(item.streak)}</td>
-          <td>${safeText(item.change)}</td>
         </tr>
       `;
     });
@@ -249,14 +247,13 @@ function renderSeasonPage() {
       `;
     });
   }
-
-  renderSeasonCharts(season);
 }
 
-function renderSeasonCharts(season) {
-  if (typeof Chart === "undefined" || !season) return;
+function renderCurrentSeasonCharts() {
+  if (typeof Chart === "undefined" || typeof leagueData === "undefined") return;
 
-  // Weekly Trend chart (points by week for one team, or average)
+  const season = leagueData.currentSeason;
+
   const weeklyTrendCanvas = document.getElementById("weekly-trend-chart");
   if (weeklyTrendCanvas && season.weeklyPoints && Array.isArray(season.weeklyPoints.labels)) {
     const labels = season.weeklyPoints.labels;
@@ -287,7 +284,6 @@ function renderSeasonCharts(season) {
     });
   }
 
-  // Playoff Odds chart
   const playoffCanvas = document.getElementById("playoff-odds-chart");
   if (playoffCanvas && Array.isArray(season.playoffOdds)) {
     const labels = season.playoffOdds.map(t => t.team);
@@ -312,7 +308,6 @@ function renderSeasonCharts(season) {
     });
   }
 
-  // Average Scores chart
   const avgCanvas = document.getElementById("average-scores-chart");
   if (avgCanvas && Array.isArray(season.averageScoresChart)) {
     const labels = season.averageScoresChart.map(t => t.team);
@@ -339,7 +334,6 @@ function renderSeasonCharts(season) {
     });
   }
 
-  // All-Play record chart
   const allPlayCanvas = document.getElementById("all-play-chart");
   if (allPlayCanvas && Array.isArray(season.allPlay)) {
     const labels = season.allPlay.map(t => t.team);

@@ -41,16 +41,52 @@ const leagueData = {
       { team: "I'm a Reidtard", manager: "Reid", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
     ],
     powerRankings: [
-      { rank: 1, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 }
+      { rank: 1, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 },
+      { rank: 2, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 },
+      { rank: 3, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 },
+      { rank: 4, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 },
+      { rank: 5, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 },
+      { rank: 6, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 },
+      { rank: 7, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 },
+      { rank: 8, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 },
+      { rank: 9, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 },
+      { rank: 10, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 }
     ],
     playoffOdds: [
-      { team: "TBD", makePlayoffs: "TBD", winTitle: "TBD", missPlayoffs: "TBD" }
+      { team: "Kung Fu Lou", makePlayoffs: "40%", winTitle: "10%", missPlayoffs: "60%" },
+      { team: "Q-Tip", makePlayoffs: "40%", winTitle: "10%", missPlayoffs: "60%" },
+      { team: "Florida Man", makePlayoffs: "40%", winTitle: "10%", missPlayoffs: "60%" },
+      { team: "Howie Dewitt", makePlayoffs: "40%", winTitle: "10%", missPlayoffs: "60%" },
+      { team: "Min Livergirll", makePlayoffs: "40%", winTitle: "10%", missPlayoffs: "60%" },
+      { team: "The Better Swan", makePlayoffs: "40%", winTitle: "10%", missPlayoffs: "60%" },
+      { team: "Ruble Incognitus", makePlayoffs: "40%", winTitle: "10%", missPlayoffs: "60%" },
+      { team: "All You Need is Love", makePlayoffs: "40%", winTitle: "10%", missPlayoffs: "60%" },
+      { team: "The SwanFather", makePlayoffs: "40%", winTitle: "10%", missPlayoffs: "60%" },
+      { team: "I'm a Reidtard", makePlayoffs: "40%", winTitle: "10%", missPlayoffs: "60%" }
     ],
     averageScoresChart: [
-      { team: "TBD", average: "TBD", actual: "TBD", last3: "TBD" }
+      { team: "Kung Fu Lou", average: "TBD", actual: "TBD", last3: "TBD" },
+      { team: "Q-Tip", average: "TBD", actual: "TBD", last3: "TBD" },
+      { team: "Florida Man", average: "TBD", actual: "TBD", last3: "TBD" },
+      { team: "Howie Dewitt", average: "TBD", actual: "TBD", last3: "TBD" },
+      { team: "Min Livergirll", average: "TBD", actual: "TBD", last3: "TBD" },
+      { team: "The Better Swan", average: "TBD", actual: "TBD", last3: "TBD" },
+      { team: "Ruble Incognitus", average: "TBD", actual: "TBD", last3: "TBD" },
+      { team: "All You Need is Love", average: "TBD", actual: "TBD", last3: "TBD" },
+      { team: "The SwanFather", average: "TBD", actual: "TBD", last3: "TBD" },
+      { team: "I'm a Reidtard", average: "TBD", actual: "TBD", last3: "TBD" }
     ],
     allPlay: [
-      { team: "TBD", wins: "TBD", losses: "TBD" }
+      { team: "Kung Fu Lou", wins: "TBD", losses: "TBD" },
+      { team: "Q-Tip", wins: "TBD", losses: "TBD" },
+      { team: "Florida Man", wins: "TBD", losses: "TBD" },
+      { team: "Howie Dewitt", wins: "TBD", losses: "TBD" },
+      { team: "Min Livergirll", wins: "TBD", losses: "TBD" },
+      { team: "The Better Swan", wins: "TBD", losses: "TBD" },
+      { team: "Ruble Incognitus", wins: "TBD", losses: "TBD" },
+      { team: "All You Need is Love", wins: "TBD", losses: "TBD" },
+      { team: "The SwanFather", wins: "TBD", losses: "TBD" },
+      { team: "I'm a Reidtard", wins: "TBD", losses: "TBD" }
     ]
   },
 
@@ -84,21 +120,20 @@ const leagueData = {
         { manager: "Nick", team: "The SwanFather", wins: 5, losses: 8, allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: 130.37, averageOpponent: 118.16, differential: 12.21, weeklyEarnings: "$90" },
         { manager: "Reid", team: "I'm a Reidtard", wins: 5, losses: 8, allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: 120.83, averageOpponent: 133.23, differential: -12.40, weeklyEarnings: "$30" }
       ],
-      weeklyPoints: {
-        labels: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9", "Week 10", "Week 11", "Week 12", "Week 13", "Week 14", "Week 15", "Week 16", "Week 17"],
-        teams: [
-          { team: "Kung Fu Lou", scores: Array(17).fill("TBD") },
-          { team: "Q-Tip", scores: Array(17).fill("TBD") },
-          { team: "Florida Man", scores: Array(17).fill("TBD") },
-          { team: "Howie Dewitt", scores: Array(17).fill("TBD") },
-          { team: "Min Livergirll", scores: Array(17).fill("TBD") },
-          { team: "The Better Swan", scores: Array(17).fill("TBD") },
-          { team: "Ruble Incognitus", scores: Array(17).fill("TBD") },
-          { team: "All You Need is Love", scores: Array(17).fill("TBD") },
-          { team: "The SwanFather", scores: Array(17).fill("TBD") },
-          { team: "I'm a Reidtard", scores: Array(17).fill("TBD") }
-        ]
-      },
+      averageScoreChart: {
+  teams: [
+    { team: "Kung Fu Lou", averageScore: 123.12 },
+    { team: "Q-Tip", averageScore: 120.32 },
+    { team: "Florida Man", averageScore: 114.54 },
+    { team: "Howie Dewitt", averageScore: 130.94 },
+    { team: "Min Livergirll", averageScore: 129.43 },
+    { team: "The Better Swan", averageScore: 125.48 },
+    { team: "Ruble Incognitus", averageScore: 137.63 },
+    { team: "All You Need is Love", averageScore: 126.96 },
+    { team: "The SwanFather", averageScore: 130.37 },
+    { team: "I'm a Reidtard", averageScore: 120.83 }
+  ]
+},
       allPlay: [
         { team: "Kung Fu Lou", wins: "TBD", losses: "TBD" },
         { team: "Q-Tip", wins: "TBD", losses: "TBD" },
@@ -202,16 +237,16 @@ const leagueData = {
   },
 
   franchises: [
-    { slug: "carolyn", manager: "Carolyn", currentTeamName: "All You Need is Love", bio: "Add franchise bio here." },
-    { slug: "eli", manager: "Eli", currentTeamName: "Howie Dewitt", bio: "Add franchise bio here." },
-    { slug: "kacie", manager: "Kacie", currentTeamName: "The Better Swan", bio: "Add franchise bio here." },
-    { slug: "kvonte", manager: "Kvonte", currentTeamName: "Q-Tip", bio: "Add franchise bio here." },
-    { slug: "lou", manager: "Lou", currentTeamName: "Kung Fu Lou", bio: "Add franchise bio here." },
-    { slug: "max", manager: "Max", currentTeamName: "Ruble Incognitus", bio: "Add franchise bio here." },
-    { slug: "min", manager: "Min", currentTeamName: "Min Livergirll", bio: "Add franchise bio here." },
-    { slug: "nick", manager: "Nick", currentTeamName: "The SwanFather", bio: "Add franchise bio here." },
-    { slug: "pat", manager: "Pat", currentTeamName: "Florida Man", bio: "Add franchise bio here." },
-    { slug: "reid", manager: "Reid", currentTeamName: "I'm a Reidtard", bio: "Add franchise bio here." }
+    { slug: "carolyn", manager: "Carolyn", currentTeamName: "All You Need is Love", bio: "Previously known as Cobb Salad." },
+    { slug: "eli", manager: "Eli", currentTeamName: "Howie Dewitt", bio: "Previously known as Bonnie and Clyde; Mahomes Alone II, lost in KC; No place like Mahomes; Pepperoni Butterfly; Dollary Clump." },
+    { slug: "kacie", manager: "Kacie", currentTeamName: "The Better Swan", bio: "Previously co-manager of We're good Once..AGAIN; We were good Once; TemporaREID." },
+    { slug: "kvonte", manager: "Kvonte", currentTeamName: "Q-Tip", bio: "Previously known as A Nightmare on Bonnie Lane 2; We were good Once; #METOO STOP RAPE; No Stat Corrections; The Nightman Cometh. Previously co-manager of We're good Once..AGAIN; We were good Once." },
+    { slug: "lou", manager: "Lou", currentTeamName: "Kung Fu Lou", bio: "Previously known as Todd GURRRLLEEEEEYYY; Va Jay Jay's Smelly Cuntler; The Dayman." },
+    { slug: "max", manager: "Max", currentTeamName: "Ruble Incognitus", bio: "Previously known as Paulie Walnuts; The Pheonix." },
+    { slug: "min", manager: "Min", currentTeamName: "Min Livergirll", bio: "Previously known as Kendrick Llama." },
+    { slug: "nick", manager: "Nick", currentTeamName: "The SwanFather", bio: "Previously known as Tearible Stones; Prison Mike; ( o Y o ); Macklemore and Ryan Lewis." },
+    { slug: "pat", manager: "Pat", currentTeamName: "Florida Man", bio: "Previously known as Leather Helmet; Lou and Eli's Scraps; Team Conway." },
+    { slug: "reid", manager: "Reid", currentTeamName: "I'm a Reidtard", bio: "Previously known as Zanzi DOG; Blue Eyes White Dragon. Previously co-manager of TemporaREID aka Kried." }
   ]
 };
 </query>

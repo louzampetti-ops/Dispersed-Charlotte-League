@@ -39,6 +39,18 @@ const leagueData = {
       { team: "All You Need is Love", manager: "Carolyn", pointsFor: 0, pointsAgainst: 0, streak: "W0" },
       { team: "The SwanFather", manager: "Nick", pointsFor: 0, pointsAgainst: 0, streak: "W0" },
       { team: "I'm a Reidtard", manager: "Reid", pointsFor: 0, pointsAgainst: 0, streak: "W0" }
+    ],
+    powerRankings: [
+      { rank: 1, team: "TBD", tier: "TBD", score: "TBD", record: "TBD", streak: "TBD", change: 0 }
+    ],
+    playoffOdds: [
+      { team: "TBD", makePlayoffs: "TBD", winTitle: "TBD", missPlayoffs: "TBD" }
+    ],
+    averageScoresChart: [
+      { team: "TBD", average: "TBD", actual: "TBD", last3: "TBD" }
+    ],
+    allPlay: [
+      { team: "TBD", wins: "TBD", losses: "TBD" }
     ]
   },
 
@@ -48,6 +60,18 @@ const leagueData = {
       champion: "Ruble Incognitus",
       runnerUp: "All You Need is Love",
       summary: "Fill in season summary.",
+      finalStandings: [
+        { place: 1, team: "Ruble Incognitus", manager: "Max", winnings: "$60" },
+        { place: 2, team: "All You Need is Love", manager: "Carolyn", winnings: "$0" },
+        { place: 3, team: "Howie Dewitt", manager: "Eli", winnings: "$90" },
+        { place: 4, team: "Min Livergirll", manager: "Min", winnings: "$90" },
+        { place: 5, team: "The Better Swan", manager: "Kacie", winnings: "$60" },
+        { place: 6, team: "Q-Tip", manager: "Kvonte", winnings: "$0" },
+        { place: 7, team: "Kung Fu Lou", manager: "Lou", winnings: "$60" },
+        { place: 8, team: "The SwanFather", manager: "Nick", winnings: "$90" },
+        { place: 9, team: "I'm a Reidtard", manager: "Reid", winnings: "$30" },
+        { place: 10, team: "Florida Man", manager: "Pat", winnings: "$30" }
+      ],
       teamStats: [
         { manager: "Lou", team: "Kung Fu Lou", wins: 5, losses: 8, allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: 123.12, averageOpponent: 125.47, differential: -2.35, weeklyEarnings: "$60" },
         { manager: "Kvonte", team: "Q-Tip", wins: 6, losses: 7, allPlayWins: "TBD", allPlayLosses: "TBD", averageScore: 120.32, averageOpponent: 124.76, differential: -4.44, weeklyEarnings: "$0" },
@@ -75,18 +99,6 @@ const leagueData = {
           { team: "I'm a Reidtard", scores: Array(17).fill("TBD") }
         ]
       },
-      averageScoresChart: [
-        { team: "Kung Fu Lou", average: "TBD", actual: "TBD" },
-        { team: "Q-Tip", average: "TBD", actual: "TBD" },
-        { team: "Florida Man", average: "TBD", actual: "TBD" },
-        { team: "Howie Dewitt", average: "TBD", actual: "TBD" },
-        { team: "Min Livergirll", average: "TBD", actual: "TBD" },
-        { team: "The Better Swan", average: "TBD", actual: "TBD" },
-        { team: "Ruble Incognitus", average: "TBD", actual: "TBD" },
-        { team: "All You Need is Love", average: "TBD", actual: "TBD" },
-        { team: "The SwanFather", average: "TBD", actual: "TBD" },
-        { team: "I'm a Reidtard", average: "TBD", actual: "TBD" }
-      ],
       allPlay: [
         { team: "Kung Fu Lou", wins: "TBD", losses: "TBD" },
         { team: "Q-Tip", wins: "TBD", losses: "TBD" },
@@ -103,8 +115,8 @@ const leagueData = {
         { label: "Most Points (Week)", holder: "Ruble Incognitus", value: "199.70", note: "Week 10" },
         { label: "Biggest Win (Week)", holder: "The Better Swan", value: "95.95", note: "Week 8 vs Florida Man" },
         { label: "Highest Scoring Player (Week)", holder: "Ruble Incognitus", value: "54.65", note: "Jahmry Gibbs" },
-        { label: "Best Record (Regular Season)", holder: "Ruble Incognitus and All You Need is Love", value: "9-4", note: "TBD" },
-        { label: "Most Points (Regular Season)", holder: "Ruble Incognitus", value: "1781.42", note: "TBD" },
+        { label: "Best Record (Regular Season)", holder: "Ruble Incognitus and All You Need is Love", value: "9-4", note: "" },
+        { label: "Most Points (Regular Season)", holder: "Ruble Incognitus", value: "1781.42", note: "" },
         { label: "Highest Scoring Player (Season)", holder: "Florida Man", value: "396.62", note: "Josh Allen" }
       ]
     },
@@ -114,12 +126,10 @@ const leagueData = {
       champion: "TBD",
       runnerUp: "TBD",
       summary: "Fill in season summary.",
+      finalStandings: [],
       teamStats: [],
       weeklyPoints: { labels: [], teams: [] },
-      averageScoresChart: [],
-      playoffOdds: [],
       allPlay: [],
-      powerRankings: [],
       recordBook: []
     },
 
@@ -128,12 +138,10 @@ const leagueData = {
       champion: "TBD",
       runnerUp: "TBD",
       summary: "Fill in season summary.",
+      finalStandings: [],
       teamStats: [],
       weeklyPoints: { labels: [], teams: [] },
-      averageScoresChart: [],
-      playoffOdds: [],
       allPlay: [],
-      powerRankings: [],
       recordBook: []
     },
 
@@ -142,12 +150,10 @@ const leagueData = {
       champion: "TBD",
       runnerUp: "TBD",
       summary: "Fill in season summary.",
+      finalStandings: [],
       teamStats: [],
       weeklyPoints: { labels: [], teams: [] },
-      averageScoresChart: [],
-      playoffOdds: [],
       allPlay: [],
-      powerRankings: [],
       recordBook: []
     },
 
@@ -156,12 +162,10 @@ const leagueData = {
       champion: "TBD",
       runnerUp: "TBD",
       summary: "Fill in season summary.",
+      finalStandings: [],
       teamStats: [],
       weeklyPoints: { labels: [], teams: [] },
-      averageScoresChart: [],
-      playoffOdds: [],
       allPlay: [],
-      powerRankings: [],
       recordBook: []
     },
 
@@ -170,12 +174,10 @@ const leagueData = {
       champion: "TBD",
       runnerUp: "TBD",
       summary: "Fill in season summary.",
+      finalStandings: [],
       teamStats: [],
       weeklyPoints: { labels: [], teams: [] },
-      averageScoresChart: [],
-      playoffOdds: [],
       allPlay: [],
-      powerRankings: [],
       recordBook: []
     }
   ],
@@ -212,3 +214,4 @@ const leagueData = {
     { slug: "reid", manager: "Reid", currentTeamName: "I'm a Reidtard", bio: "Add franchise bio here." }
   ]
 };
+</query>

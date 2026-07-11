@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DCL - Roadmap</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .roadmap-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+
+    .status-card {
+      border: 1px solid #d8d3c6;
+      border-radius: 12px;
+      padding: 1rem;
+      background: #fffdf8;
+    }
+
+    .status-label {
+      display: inline-block;
+      margin-bottom: 0.75rem;
+      padding: 0.35rem 0.65rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .status-planned { background: #efe7d0; color: #7a5a00; }
+    .status-progress { background: #e3e8ff; color: #2e3192; }
+    .status-shipped { background: #dff3e4; color: #1f6b39; }
+    .status-ideas { background: #f1f1f1; color: #555; }
+
+    .roadmap-list,
+    .changelog-list {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    .roadmap-list li,
+    .changelog-list li {
+      margin-bottom: 0.65rem;
+      line-height: 1.5;
+    }
+
+    .changelog-entry {
+      border-top: 1px solid #ddd6c8;
+      padding-top: 1rem;
+      margin-top: 1rem;
+    }
+
+    .changelog-entry:first-of-type {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .update-date {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #2e3192;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="current-season.html">Current Season</a>
+    <a href="history.html">Season History</a>
+    <a href="all-time.html">All-Time</a>
+    <a href="teams.html">Teams</a>
+    <a href="directory.html">League Directory</a>
+    <a href="roadmap.html">Roadmap</a>
+  </nav>
+
+  <header class="site-header">
+    <img src="assets/logo.jpg" alt="DCL league logo" class="site-logo">
+    <div class="site-title">
+      <h1>Site Roadmap</h1>
+      <p>Planned updates, in-progress work, and shipped changes for the league site.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2 class="section-title">Roadmap</h2>
+      <div class="roadmap-grid">
+        <div class="status-card">
+          <span class="status-label status-planned">Planned</span>
+          <ul class="roadmap-list">
+            <li>Add current-season playoff picture table.</li>
+            <li>Add weekly standings movement chart.</li>
+            <li>Add record book to current season page.</li>
+            <li>Add franchise pages with manager history and team-name history.</li>
+          </ul>
+        </div>
+
+        <div class="status-card">
+          <span class="status-label status-progress">In Progress</span>
+          <ul class="roadmap-list">
+            <li>Clean up current-season data structure.</li>
+            <li>Improve weekly update workflow for scores and stats.</li>
+            <li>Build out charts for averages, all-play, and playoff odds.</li>
+          </ul>
+        </div>
+
+        <div class="status-card">
+          <span class="status-label status-shipped">Shipped</span>
+          <ul class="roadmap-list">
+            <li>Home page with current snapshot and archive.</li>
+            <li>Current season page structure.</li>
+            <li>Season archive pages.</li>
+            <li>All-time records page.</li>
+            <li>League directory page.</li>
+          </ul>
+        </div>
+
+        <div class="status-card">
+          <span class="status-label status-ideas">Ideas / Nice to Have</span>
+          <ul class="roadmap-list">
+            <li>Automated ESPN score import.</li>
+            <li>Head-to-head rivalry tracker.</li>
+            <li>Draft history page by season.</li>
+            <li>Weekly recap article section.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Changelog</h2>
+
+      <div class="changelog-entry">
+        <div class="update-date">July 2026</div>
+        <ul class="changelog-list">
+          <li><strong>Added:</strong> Initial site structure with home, history, teams, directory, and all-time pages.</li>
+          <li><strong>Improved:</strong> Expanded current season planning for standings, charts, and weekly stats.</li>
+          <li><strong>Fixed:</strong> Cleaned up data model issues while testing current-season rendering.</li>
+        </ul>
+      </div>
+
+      <div class="changelog-entry">
+        <div class="update-date">Future update template</div>
+        <ul class="changelog-list">
+          <li><strong>Added:</strong> New feature here.</li>
+          <li><strong>Improved:</strong> Enhancement here.</li>
+          <li><strong>Fixed:</strong> Bug fix here.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">DCL Fantasy Football</footer>
+</body>
+</html>

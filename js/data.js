@@ -4,9 +4,10 @@ const leagueData = {
     tagline: "League history, standings, stats, and records",
     roles: [
       { title: "Commissioner", name: "Lou Zampetti" },
-      { title: "Director of Tomfoolery", name: "TBD" },
-      { title: "Director of the Director of Tomfoolery", name: "TBD" },
-      { title: "Creative Designer", name: "TBD" }
+      { title: "Director of Tomfoolery", name: "Pat Conway" },
+      { title: "Director of the Director of Tomfoolery", name: "Nick Swan" },
+      { title: "Media Director", name: "Eli Clevenger" },
+      { title: "Former Comissioner", name: "Min Hartmann"}
     ]
   },
 

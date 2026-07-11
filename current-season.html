@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DCL - Current Season</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <nav class="site-nav">
@@ -20,7 +21,7 @@
     <img src="assets/logo.jpg" alt="DCL league logo" class="site-logo">
     <div class="site-title">
       <h1 id="current-season-title">Current Season</h1>
-      <p>Standings, scores, and team stats.</p>
+      <p>Standings, live-season stats, playoff race, and league records.</p>
     </div>
   </header>
 
@@ -71,14 +72,79 @@
             <tr>
               <th>Team</th>
               <th>Manager</th>
-              <th>PF</th>
-              <th>PA</th>
+              <th>Avg Score</th>
+              <th>Last 3 Avg</th>
+              <th>Avg Opp</th>
+              <th>Diff</th>
+              <th>Weekly Earnings</th>
               <th>Streak</th>
             </tr>
           </thead>
           <tbody id="current-team-stats"></tbody>
         </table>
       </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Power Rankings</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Team</th>
+              <th>Tier</th>
+              <th>Score</th>
+              <th>Record</th>
+              <th>Streak</th>
+              <th>Change</th>
+            </tr>
+          </thead>
+          <tbody id="current-power-rankings"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Playoff Picture</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Seed</th>
+              <th>Team</th>
+              <th>Manager</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="current-playoff-picture"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Record Book</h2>
+      <ul id="current-record-book" class="list-clean"></ul>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Standings by Week</h2>
+      <canvas id="standings-history-chart"></canvas>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Playoff Odds</h2>
+      <canvas id="playoff-odds-chart"></canvas>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">Scoring Comparison</h2>
+      <canvas id="average-scores-chart"></canvas>
+    </section>
+
+    <section class="card">
+      <h2 class="section-title">All-Play Record</h2>
+      <canvas id="all-play-chart"></canvas>
     </section>
   </main>
 

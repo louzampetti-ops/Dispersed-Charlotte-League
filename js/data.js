@@ -27,6 +27,10 @@ const leagueData = {
       { place: 10, team: "TBD", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 }
     ],
     weeklyScores: [
+      { week: 1, away: "Team A", awayScore: 0, home: "Team B", homeScore: 0 },
+      { week: 1, away: "Team A", awayScore: 0, home: "Team B", homeScore: 0 },
+      { week: 1, away: "Team A", awayScore: 0, home: "Team B", homeScore: 0 },
+      { week: 1, away: "Team A", awayScore: 0, home: "Team B", homeScore: 0 },
       { week: 1, away: "Team A", awayScore: 0, home: "Team B", homeScore: 0 }
     ],
     teamStats: [
@@ -54,12 +58,10 @@ const leagueData = {
       { rank: 10, team: "TBD", tier: "TBD", score: "TBD", record: "0-0", streak: "W0", change: 0 }
     ],
     playoffPicture: [
-      { seed: 1, team: "TBD", manager: "TBD", status: "Bye" },
-      { seed: 2, team: "TBD", manager: "TBD", status: "Bye" },
-      { seed: 3, team: "TBD", manager: "TBD", status: "In" },
-      { seed: 4, team: "TBD", manager: "TBD", status: "In" },
-      { seed: 5, team: "TBD", manager: "TBD", status: "In" },
-      { seed: 6, team: "TBD", manager: "TBD", status: "In" }
+      { seed: 1, team: "TBD", manager: "TBD", status: "Projected" },
+      { seed: 2, team: "TBD", manager: "TBD", status: "Projected" },
+      { seed: 3, team: "TBD", manager: "TBD", status: "Projected" },
+      { seed: 4, team: "TBD", manager: "TBD", status: "Projected" }
     ],
     playoffOdds: [
       { team: "Kung Fu Lou", makePlayoffs: 40, winTitle: 10, missPlayoffs: 60 },
@@ -76,16 +78,16 @@ const leagueData = {
     weeklyStandingsHistory: {
       labels: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9", "Week 10", "Week 11", "Week 12", "Week 13", "Week 14"],
       teams: [
-        { team: "Kung Fu Lou", places: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] },
-        { team: "Q-Tip", places: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] },
-        { team: "Florida Man", places: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3] },
-        { team: "Howie Dewitt", places: [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4] },
-        { team: "Min Livergirll", places: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5] },
-        { team: "The Better Swan", places: [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6] },
-        { team: "Ruble Incognitus", places: [7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7] },
-        { team: "All You Need is Love", places: [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8] },
-        { team: "The SwanFather", places: [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9] },
-        { team: "I'm a Reidtard", places: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10] }
+        { team: "Kung Fu Lou", places: [1] },
+        { team: "Q-Tip", places: [2] },
+        { team: "Florida Man", places: [3] },
+        { team: "Howie Dewitt", places: [4] },
+        { team: "Min Livergirll", places: [5] },
+        { team: "The Better Swan", places: [6] },
+        { team: "Ruble Incognitus", places: [7] },
+        { team: "All You Need is Love", places: [8] },
+        { team: "The SwanFather", places: [9] },
+        { team: "I'm a Reidtard", places: [10] }
       ]
     },
     allPlay: [

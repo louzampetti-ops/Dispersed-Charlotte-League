@@ -17,45 +17,38 @@ const leagueData = {
     standings: [
       { place: 1, team: "Jimmy Hanes", manager: "Reid", wins: 3, losses: 0, pointsFor: 435.76, pointsAgainst: 339.54 },
       { place: 2, team: "Q-Tip", manager: "Kvonte", wins: 3, losses: 0, pointsFor: 381.93, pointsAgainst: 337.28 },
-      { place: 3, team: "TBD", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
-      { place: 4, team: "TBD", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
-      { place: 5, team: "TBD", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
-      { place: 6, team: "TBD", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
-      { place: 7, team: "TBD", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
-      { place: 8, team: "TBD", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
-      { place: 9, team: "TBD", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
-      { place: 10, team: "TBD", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 }
-    ],
-    weeklyScores: [
-      { week: 1, away: "Team A", awayScore: 0, home: "Team B", homeScore: 0 },
-      { week: 1, away: "Team A", awayScore: 0, home: "Team B", homeScore: 0 },
-      { week: 1, away: "Team A", awayScore: 0, home: "Team B", homeScore: 0 },
-      { week: 1, away: "Team A", awayScore: 0, home: "Team B", homeScore: 0 },
-      { week: 1, away: "Team A", awayScore: 0, home: "Team B", homeScore: 0 }
+      { place: 3, team: "All You Need is Love", manager: "Carolyn", wins: 2, losses: 1, pointsFor: 400.32, pointsAgainst: 413.38 },
+      { place: 4, team: "Howie Dewitt", manager: "Eli", wins: 2, losses: 1, pointsFor: 374.37, pointsAgainst: 384.53 },
+      { place: 5, team: "Min Livergirll", manager: "Min", wins: 1, losses: 2, pointsFor: 457.19, pointsAgainst: 411.05 },
+      { place: 6, team: "Ruble Incognitus", manager: "Max", wins: 1, losses: 2, pointsFor: 395.18, pointsAgainst: 421.12 },
+      { place: 7, team: "The SwanFather", manager: "Nick", wins: 1, losses: 2, pointsFor: 379.74, pointsAgainst: 418.16 },
+      { place: 8, team: "Kung Fu Lou", manager: "Lou", wins: 1, losses: 2, pointsFor: 306.30, pointsAgainst: 291.30 },
+      { place: 9, team: "Mrs Hartmann", manager: "Pat", wins: 1, losses: 2, pointsFor: 351.78, pointsAgainst: 391.73 },
+      { place: 10, team: "The Better Swan", manager: "Kacie", wins: 0, losses: 3, pointsFor: 330.41, pointsAgainst: 404.89 }
     ],
     teamStats: [
-      { team: "Kung Fu Lou", manager: "Lou", averageScore: 0, last3Average: 0, averageOpponent: 0, differential: 0, weeklyEarnings: "$0", streak: "W0" },
-      { team: "Q-Tip", manager: "Kvonte", averageScore: 0, last3Average: 0, averageOpponent: 0, differential: 0, weeklyEarnings: "$0", streak: "W0" },
-      { team: "Florida Man", manager: "Pat", averageScore: 0, last3Average: 0, averageOpponent: 0, differential: 0, weeklyEarnings: "$0", streak: "W0" },
-      { team: "Howie Dewitt", manager: "Eli", averageScore: 0, last3Average: 0, averageOpponent: 0, differential: 0, weeklyEarnings: "$0", streak: "W0" },
-      { team: "Min Livergirll", manager: "Min", averageScore: 0, last3Average: 0, averageOpponent: 0, differential: 0, weeklyEarnings: "$0", streak: "W0" },
-      { team: "The Better Swan", manager: "Kacie", averageScore: 0, last3Average: 0, averageOpponent: 0, differential: 0, weeklyEarnings: "$0", streak: "W0" },
-      { team: "Ruble Incognitus", manager: "Max", averageScore: 0, last3Average: 0, averageOpponent: 0, differential: 0, weeklyEarnings: "$0", streak: "W0" },
-      { team: "All You Need is Love", manager: "Carolyn", averageScore: 0, last3Average: 0, averageOpponent: 0, differential: 0, weeklyEarnings: "$0", streak: "W0" },
-      { team: "The SwanFather", manager: "Nick", averageScore: 0, last3Average: 0, averageOpponent: 0, differential: 0, weeklyEarnings: "$0", streak: "W0" },
-      { team: "I'm a Reidtard", manager: "Reid", averageScore: 0, last3Average: 0, averageOpponent: 0, differential: 0, weeklyEarnings: "$0", streak: "W0" }
+      { team: "Kung Fu Lou", manager: "Lou", averageScore: 102.10, last3Average: 102.10, averageOpponent: 97.10, differential: 15.00, weeklyEarnings: "$0", streak: "L1" },
+      { team: "Q-Tip", manager: "Kvonte", averageScore: 127.31, last3Average: 127.31, averageOpponent: 112.43, differential: 44.53, weeklyEarnings: "$30", streak: "W3" },
+      { team: "Mrs Hartmann", manager: "Pat", averageScore: 117.26, last3Average: 117.26, averageOpponent: 130.58, differential: -39.95, weeklyEarnings: "$0", streak: "L2" },
+      { team: "Howie Dewitt", manager: "Eli", averageScore: 124.79, last3Average: 124.79, averageOpponent: 128.18, differential: -10.16, weeklyEarnings: "$0", streak: "W1" },
+      { team: "Min Livergirll", manager: "Min", averageScore: 152.40, last3Average: 152.40, averageOpponent: 137.02, differential: 46.14, weeklyEarnings: "$0", streak: "L1" },
+      { team: "The Better Swan", manager: "Kacie", averageScore: 110.14, last3Average: 110.14, averageOpponent: 134.96, differential: -74.48, weeklyEarnings: "$0", streak: "L3" },
+      { team: "Ruble Incognitus", manager: "Max", averageScore: 131.73, last3Average: 131.73, averageOpponent: 140.37, differential: -25.94, weeklyEarnings: "$30", streak: "L2" },
+      { team: "All You Need is Love", manager: "Carolyn", averageScore: 133.44, last3Average: 133.44, averageOpponent: 137.79, differential: -13.06, weeklyEarnings: "$30", streak: "W2" },
+      { team: "The SwanFather", manager: "Nick", averageScore: 126.58, last3Average: 126.58, averageOpponent: 139.39, differential: -38.42, weeklyEarnings: "$0", streak: "W1" },
+      { team: "Jimmy Hanes", manager: "Reid", averageScore: 145.25, last3Average: 145.25, averageOpponent: 113.18, differential: 96.22, weeklyEarnings: "$0", streak: "W3" }
     ],
     powerRankings: [
-      { rank: 1, team: "TBD", tier: "TBD", score: "TBD", record: "0-0", streak: "W0", change: 0 },
-      { rank: 2, team: "TBD", tier: "TBD", score: "TBD", record: "0-0", streak: "W0", change: 0 },
-      { rank: 3, team: "TBD", tier: "TBD", score: "TBD", record: "0-0", streak: "W0", change: 0 },
-      { rank: 4, team: "TBD", tier: "TBD", score: "TBD", record: "0-0", streak: "W0", change: 0 },
-      { rank: 5, team: "TBD", tier: "TBD", score: "TBD", record: "0-0", streak: "W0", change: 0 },
-      { rank: 6, team: "TBD", tier: "TBD", score: "TBD", record: "0-0", streak: "W0", change: 0 },
-      { rank: 7, team: "TBD", tier: "TBD", score: "TBD", record: "0-0", streak: "W0", change: 0 },
-      { rank: 8, team: "TBD", tier: "TBD", score: "TBD", record: "0-0", streak: "W0", change: 0 },
-      { rank: 9, team: "TBD", tier: "TBD", score: "TBD", record: "0-0", streak: "W0", change: 0 },
-      { rank: 10, team: "TBD", tier: "TBD", score: "TBD", record: "0-0", streak: "W0", change: 0 }
+      { rank: 1, team: "Jimmy Hanes", tier: 1, score: 1597.79, record: "3-0", streak: "W3", change: 0 },
+      { rank: 2, team: "Min Livergirll", tier: 1, score: 1523.97, record: "1-2", streak: "L1", change: 0 },
+      { rank: 3, team: "Q-Tip", tier: 1, score: 1400.41, record: "3-0", streak: "W3", change: 0 },
+      { rank: 4, team: "All You Need is Love", tier: 2, score: 1200.96, record: "2-1", streak: "W2", change: 0 },
+      { rank: 5, team: "Howie Dewitt", tier: 3, score: 1123.11, record: "2-1", streak: "W1", change: 0 },
+      { rank: 6, team: "Ruble Incognitus", tier: 3, score: 1053.81, record: "1-2", streak: "L2", change: 0 },
+      { rank: 7, team: "The SwanFather", tier: 3, score: 1012.64, record: "1-2", streak: "W1", change: 0 },
+      { rank: 8, team: "Mrs Hartmann", tier: 3, score: 938.08, record: "1-2", streak: "L2", change: 0 },
+      { rank: 9, team: "Kung Fu Lou", tier: 4, score: 714.70, record: "1-2", streak: "L1", change: 0 },
+      { rank: 10, team: "The Better Swan", tier: 4, score: 660.82, record: "0-3", streak: "L3", change: 0 }
     ],
     playoffPicture: [
       { seed: 1, team: "TBD", manager: "TBD", status: "Projected" },
@@ -64,16 +57,16 @@ const leagueData = {
       { seed: 4, team: "TBD", manager: "TBD", status: "Projected" }
     ],
     playoffOdds: [
-      { team: "Kung Fu Lou", makePlayoffs: 40, winTitle: 10, missPlayoffs: 60 },
-      { team: "Q-Tip", makePlayoffs: 40, winTitle: 10, missPlayoffs: 60 },
-      { team: "Florida Man", makePlayoffs: 40, winTitle: 10, missPlayoffs: 60 },
-      { team: "Howie Dewitt", makePlayoffs: 40, winTitle: 10, missPlayoffs: 60 },
-      { team: "Min Livergirll", makePlayoffs: 40, winTitle: 10, missPlayoffs: 60 },
-      { team: "The Better Swan", makePlayoffs: 40, winTitle: 10, missPlayoffs: 60 },
-      { team: "Ruble Incognitus", makePlayoffs: 40, winTitle: 10, missPlayoffs: 60 },
-      { team: "All You Need is Love", makePlayoffs: 40, winTitle: 10, missPlayoffs: 60 },
-      { team: "The SwanFather", makePlayoffs: 40, winTitle: 10, missPlayoffs: 60 },
-      { team: "I'm a Reidtard", makePlayoffs: 40, winTitle: 10, missPlayoffs: 60 }
+      { team: "Kung Fu Lou", makePlayoffs: 13, winTitle: 2, missPlayoffs: 87 },
+      { team: "Q-Tip", makePlayoffs: 63, winTitle: 14, missPlayoffs: 37 },
+      { team: "Mrs Hartmann", makePlayoffs: 22, winTitle: 5, missPlayoffs: 78 },
+      { team: "Howie Dewitt", makePlayoffs: 60, winTitle: 18, missPlayoffs: 40 },
+      { team: "Min Livergirll", makePlayoffs: 61, winTitle: 21, missPlayoffs: 39 },
+      { team: "The Better Swan", makePlayoffs: 17, winTitle: 3, missPlayoffs: 83 },
+      { team: "Ruble Incognitus", makePlayoffs: 31, winTitle: 7, missPlayoffs: 69 },
+      { team: "All You Need is Love", makePlayoffs: 40, winTitle: 6, missPlayoffs: 60 },
+      { team: "The SwanFather", makePlayoffs: 22, winTitle: 4, missPlayoffs: 78 },
+      { team: "Jimmy Hanes", makePlayoffs: 71, winTitle: 20, missPlayoffs: 29 }
     ],
     weeklyStandingsHistory: {
       labels: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9", "Week 10", "Week 11", "Week 12", "Week 13", "Week 14"],
@@ -91,16 +84,16 @@ const leagueData = {
       ]
     },
     allPlay: [
-      { team: "Kung Fu Lou", wins: 0, losses: 0 },
-      { team: "Q-Tip", wins: 0, losses: 0 },
-      { team: "Florida Man", wins: 0, losses: 0 },
-      { team: "Howie Dewitt", wins: 0, losses: 0 },
-      { team: "Min Livergirll", wins: 0, losses: 0 },
-      { team: "The Better Swan", wins: 0, losses: 0 },
-      { team: "Ruble Incognitus", wins: 0, losses: 0 },
-      { team: "All You Need is Love", wins: 0, losses: 0 },
-      { team: "The SwanFather", wins: 0, losses: 0 },
-      { team: "I'm a Reidtard", wins: 0, losses: 0 }
+      { team: "Kung Fu Lou", wins: 6, losses: 21 },
+      { team: "Q-Tip", wins: 18, losses: 9 },
+      { team: "Mrs Hartmann", wins: 7, losses: 20 },
+      { team: "Howie Dewitt", wins: 16, losses: 11 },
+      { team: "Min Livergirll", wins: 21, losses: 6 },
+      { team: "The Better Swan", wins: 7, losses: 20 },
+      { team: "Ruble Incognitus", wins: 15, losses: 12 },
+      { team: "All You Need is Love", wins: 18, losses: 9 },
+      { team: "The SwanFather", wins: 10, losses: 17 },
+      { team: "Jimmy Hanes", wins: 17, losses: 10 }
     ],
     recordBook: [
       { label: "Most Points (Week)", holder: "TBD", value: "0", note: "Week TBD" },

@@ -13,7 +13,7 @@ const leagueData = {
 
   currentSeason: {
     year: 2026,
-    summary: "Summary.",
+    summary: "After three weeks, Jimmy Hanes and Q-Tip are tied for the league’s best record at 3–0, with Jimmy Hanes leading the standings on 435.76 points. Min Livergirll leads the league in scoring average at 152.40 points per game, while The Better Swan is looking for a turnaround after an 0–3 start.",
     standings: [
       { place: 1, team: "Jimmy Hanes", manager: "Reid", wins: 3, losses: 0, pointsFor: 435.76, pointsAgainst: 339.54 },
       { place: 2, team: "Q-Tip", manager: "Kvonte", wins: 3, losses: 0, pointsFor: 381.93, pointsAgainst: 337.28 },

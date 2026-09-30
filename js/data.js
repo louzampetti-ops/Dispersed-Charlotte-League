@@ -13,10 +13,10 @@ const leagueData = {
 
   currentSeason: {
     year: 2026,
-    summary: "Offseason.",
+    summary: "Summary.",
     standings: [
-      { place: 1, team: "TBD", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
-      { place: 2, team: "TBD", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
+      { place: 1, team: "Jimmy Hanes", manager: "Reid", wins: 3, losses: 0, pointsFor: 435.76, pointsAgainst: 339.54 },
+      { place: 2, team: "Q-Tip", manager: "Kvonte", wins: 3, losses: 0, pointsFor: 381.93, pointsAgainst: 337.28 },
       { place: 3, team: "TBD", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
       { place: 4, team: "TBD", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },
       { place: 5, team: "TBD", manager: "TBD", wins: 0, losses: 0, pointsFor: 0, pointsAgainst: 0 },

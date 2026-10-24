@@ -13,7 +13,7 @@ const leagueData = {
 
   currentSeason: {
     year: 2026,
-    summary: "After three weeks, Jimmy Hanes and Q-Tip are tied for the league’s best record at 3–0, with Jimmy Hanes leading the standings on 435.76 points. Min Livergirll leads the league in scoring average at 152.40 points per game, while The Better Swan is looking for a turnaround after an 0–3 start.",
+    summary: "Through six weeks, Jimmy Hanes holds first place at 5–1, with All You Need is Love matching that record and riding a five-game winning streak. Carolyn’s squad leads the league with 849.80 points and tops the power rankings, while Q-Tip and Howie Dewitt round out the current playoff field at 4–2. Defending champion Ruble Incognitus sits one game back at 3–3. Min Livergirll remains a dangerous contender despite a 2–4 start, while Kung Fu Lou and The Better Swan enter Week 7 coming off wins. With seven regular-season games remaining, there’s still plenty of time for the playoff picture to change.",
     standings: [
       { place: 1, team: "Jimmy Hanes", manager: "Reid", wins: 5, losses: 1, pointsFor: 810.58, pointsAgainst: 728.33 },
       { place: 2, team: "All You Need is Love", manager: "Carolyn", wins: 5, losses: 1, pointsFor: 849.80, pointsAgainst: 788.60 },

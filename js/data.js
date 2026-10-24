@@ -99,7 +99,7 @@ const leagueData = {
       { label: "Most Points (Week)", holder: "Jimmy Hanes", value: "176.17", note: "Week 1" },
       { label: "Biggest Win (Week)", holder: "Min Livergirll", value: "54.86", note: "Week 2" },
       { label: "Highest Scoring Player (Week)", holder: "Min Livergirll", value: "46.07", note: "Josh Allen" },
-      { label: "Best Record", holder: "Jimmy Hanes and All You Need is Love", value: "5-1", note: ""),
+      { label: "Best Record", holder: "Jimmy Hanes and All You Need is Love", value: "5-1", note: ""},
       { label: "Most Points", holder: "All You Need is Love", value: "849.80", note: ""},
       { label: "Highest Scoring Player (Season)", holder: "Min Livergirll", value: "174.01", note: "Josh Allen" }
     ]

@@ -71,16 +71,16 @@ const leagueData = {
     weeklyStandingsHistory: {
       labels: ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9", "Week 10", "Week 11", "Week 12", "Week 13", "Week 14"],
       teams: [
-        { team: "Kung Fu Lou", places: [10] [8] [8] [9] [9] [7]},
-        { team: "Q-Tip", places: [5] [2] [2] [3] [3] [3] },
-        { team: "Mrs Hartmann", places: [3] [6] [9] [8] [8] [9] },
-        { team: "Howie Dewitt", places: [4] [7] [4] [6] [5] [4] },
-        { team: "Min Livergirll", places: [6] [3] [5] [4] [6] [6] },
-        { team: "The Better Swan", places: [9] [10] [10] [10] [10] [10] },
-        { team: "Ruble Incognitus", places: [1] [5] [6] [5] [4] [5] },
-        { team: "All You Need is Love", places: [8] [4] [3] [1] [1] [2] },
-        { team: "The SwanFather", places: [7] [9] [7] [7] [7] [8] },
-        { team: "I'm a Reidtard", places: [2] [1] [1] [2] [2] [1] }
+        { team: "Kung Fu Lou", places: [10, 8, 8, 9, 9, 7]},
+        { team: "Q-Tip", places: [5, 2, 2, 3, 3, 3},
+        { team: "Mrs Hartmann", places: [3, 6, 9, 8, 8, 9] },
+        { team: "Howie Dewitt", places: [4, 7, 4, 6, 5, 4] },
+        { team: "Min Livergirll", places: [6, 3, 5, 4, 6, 6] },
+        { team: "The Better Swan", places: [9, 10, 10, 10, 10, 10] },
+        { team: "Ruble Incognitus", places: [1, 5, 6, 5, 4, 5] },
+        { team: "All You Need is Love", places: [8, 4, 3, 1, 1, 2] },
+        { team: "The SwanFather", places: [7, 9, 7, 7, 7, 8] },
+        { team: "I'm a Reidtard", places: [2, 1, 1, 2, 2, 1] }
       ]
     },
     allPlay: [

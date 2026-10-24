@@ -80,7 +80,7 @@ const leagueData = {
         { team: "Ruble Incognitus", places: [1, 5, 6, 5, 4, 5] },
         { team: "All You Need is Love", places: [8, 4, 3, 1, 1, 2] },
         { team: "The SwanFather", places: [7, 9, 7, 7, 7, 8] },
-        { team: "I'm a Reidtard", places: [2, 1, 1, 2, 2, 1] }
+        { team: "Jimmy Hanes", places: [2, 1, 1, 2, 2, 1] }
       ]
     },
     allPlay: [

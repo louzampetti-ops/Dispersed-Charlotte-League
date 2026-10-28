@@ -13,7 +13,7 @@ const leagueData = {
 
   currentSeason: {
     year: 2026,
-    summary: "Through six weeks, Jimmy Hanes holds first place at 5–1, with All You Need is Love matching that record and riding a five-game winning streak. Carolyn’s squad leads the league with 849.80 points and tops the power rankings, while Q-Tip and Howie Dewitt round out the current playoff field at 4–2. Defending champion Ruble Incognitus sits one game back at 3–3. Min Livergirll remains a dangerous contender despite a 2–4 start, while Kung Fu Lou and The Better Swan enter Week 7 coming off wins. With seven regular-season games remaining, there’s still plenty of time for the playoff picture to change.",
+    summary: "Through seven weeks, Jimmy Hanes leads the DCL at 6–1 after a third straight win, while All You Need is Love sits one game back at 5–2 and leads the league with 995.81 points. Q-Tip and Howie Dewitt hold the remaining playoff positions at 4–3, but five teams sit just one game behind at 3–4. Kung Fu Lou is building momentum with back-to-back wins and a jump to fourth in the power rankings, while Min Livergirll climbs to fifth in the standings and second in the power rankings. With six regular-season games remaining, the race for four playoff spots is wide open.",
     standings: [
       { place: 1, team: "Jimmy Hanes", manager: "Reid", wins: 6, losses: 1, pointsFor: 934.10, pointsAgainst: 836.68 },
       { place: 2, team: "All You Need is Love", manager: "Carolyn", wins: 5, losses: 2, pointsFor: 995.81, pointsAgainst: 940.67 },
